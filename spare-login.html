@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="160 characters">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/key-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ff02a3b926.js" crossorigin="anonymous"></script>
+    <title>Se connecter</title>
+</head>
+<body>
+    <div class="container" id="login-container">
+        <div class="card" id="spare-card">
+            <div>
+                <img src="assets/img/o3d-dark.png" alt="Login or create account" class="card-img">
+            </div>
+            <div class="card-title">
+            <h1>S.P.A.R.E.</h1>
+            <p>Suivi Personnel pour les Absences et les Retards des Élèves</p>
+            </div>
+            <div class="card-text">
+                <form action="sent.html" method="post">
+                    <!-- <input type="text" name="utilisateur" id="user" placeholder="Identifiant" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+"> -->
+                    <input class="form-control" type="text"  required="" placeholder="Identifiant" oninvalid="this.setCustomValidity('Merci de marquer votre identifiant')"
+                        oninput="setCustomValidity('')"></input>
+                    <br>
+                    <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required minlength="8" maxlength="15">
+            </div>
+                    <input type="submit" value="Se connecter" class="black-pill">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
